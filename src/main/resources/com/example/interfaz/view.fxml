@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXSlider?>
 <?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
@@ -15,26 +16,34 @@
    <children>
       <AnchorPane fx:id="MenuBar" prefHeight="531.0" prefWidth="98.0" style="-fx-background-color: #05618A; -fx-background-radius: 5em; -fx-border-radius: 5em;">
          <children>
-            <ImageView id="ib_home" fx:id="ib_Home" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="54.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@img/Home.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="ib_Shutdown" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="413.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@img/Shutdown.png" />
-               </image>
-            </ImageView>
-            <ImageView id="ib_User" fx:id="ib_User" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="170.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@img/User.png" />
-               </image>
-            </ImageView>
-            <ImageView id="ib_Settings" fx:id="ib_Settings" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="297.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@img/Settings.png" />
-               </image>
-            </ImageView>
+            <JFXButton fx:id="home_f" contentDisplay="TOP" layoutX="23.0" layoutY="54.0" onAction="#evento" styleClass="botones" stylesheets="@estilo.css" text="HOME" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="35" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="user_f" contentDisplay="TOP" layoutX="27.0" layoutY="165.0" onAction="#evento" styleClass="botones" stylesheets="@estilo.css" text="USER" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" size="35" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="settings_f" contentDisplay="TOP" layoutX="15.0" layoutY="292.0" onAction="#evento" styleClass="botones" stylesheets="@estilo.css" text="SETTINGS" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GEAR" size="35" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="close_f" contentDisplay="TOP" layoutX="23.0" layoutY="419.0" onAction="#evento" styleClass="botones" stylesheets="@estilo.css" text="CLOSE" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" size="35" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="Menu1" layoutX="115.0" prefHeight="531.0" prefWidth="726.0" style="-fx-background-color: #05618A; -fx-border-radius: 5em; -fx-background-radius: 5em;" visible="false">

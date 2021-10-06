@@ -1,11 +1,14 @@
 package com.example.interfaz;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -26,37 +29,35 @@ public class Controller implements Initializable {
     @FXML
     private AnchorPane MenuBar;
 
-    @FXML
-    private ImageView ib_Home;
 
     @FXML
-    private ImageView ib_Settings;
+    private Button close_f;
 
     @FXML
-    private ImageView ib_Shutdown;
+    private Button home_f;
 
     @FXML
-    private ImageView ib_User;
+    private Button settings_f;
 
     @FXML
-    void mambeche(MouseEvent e) {
-        if(e.getTarget()==ib_Shutdown)
+    private Button user_f;
+
+    @FXML
+    void evento(ActionEvent e) {
+        Object obj = e.getSource();
+        if (obj.equals(close_f)){
             System.exit(0);
-        else
-        if(e.getTarget()==ib_Home)
-        {
+        }else if (obj.equals(home_f)) {
             Menu1.setVisible(false);
             Menu2.setVisible(false);
-        }else
-        if(e.getTarget()==ib_Settings)
-        {
+        } else if (obj.equals(settings_f)) {
             Menu1.setVisible(true);
             Menu2.setVisible(false);
-        }else
-        if(e.getTarget()==ib_User)
-        {
+        } else if (obj.equals(user_f)) {
             Menu2.setVisible(true);
             Menu1.setVisible(false);
         }
     }
+
+
 }
