@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="841.0" style="-fx-background-color: null;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfaz.Controller">
+   <children>
+      <AnchorPane fx:id="MenuBar" prefHeight="531.0" prefWidth="98.0" style="-fx-background-color: #05618A; -fx-background-radius: 5em; -fx-border-radius: 5em;">
+         <children>
+            <ImageView id="ib_home" fx:id="ib_Home" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="54.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Home.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ib_Shutdown" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="413.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Shutdown.png" />
+               </image>
+            </ImageView>
+            <ImageView id="ib_User" fx:id="ib_User" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="170.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/User.png" />
+               </image>
+            </ImageView>
+            <ImageView id="ib_Settings" fx:id="ib_Settings" fitHeight="32.0" fitWidth="32.0" layoutX="33.0" layoutY="297.0" onMousePressed="#mambeche" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Settings.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Menu1" layoutX="115.0" prefHeight="531.0" prefWidth="726.0" style="-fx-background-color: #05618A; -fx-border-radius: 5em; -fx-background-radius: 5em;" visible="false">
+         <children>
+            <Label layoutX="173.0" layoutY="58.0" text="Toques Interactivos" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXToggleButton layoutX="403.0" layoutY="17.0" prefHeight="108.0" prefWidth="144.0" size="20.0" text="On" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXToggleButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="79.0" prefHeight="34.0" prefWidth="144.0" text="Los toques podran verse &#10;con efectos 3D" textAlignment="CENTER" textFill="#ffffff70" />
+            <Label layoutX="173.0" layoutY="188.0" text="Auto-Suscribirse" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXToggleButton layoutX="403.0" layoutY="147.0" prefHeight="108.0" prefWidth="144.0" size="20.0" text="On" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="12.0" />
+               </font>
+            </JFXToggleButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="201.0" prefHeight="54.0" prefWidth="156.0" text="Suscribirse automaticamente&#10;al canal&#10;" textAlignment="CENTER" textFill="#ffffff70" />
+            <Separator layoutX="25.0" layoutY="262.0" opacity="0.5" prefHeight="18.0" prefWidth="672.0" />
+            <JFXSlider layoutX="167.0" layoutY="330.0" prefHeight="14.0" prefWidth="369.0" />
+            <Label layoutX="167.0" layoutY="291.0" text="Brillo" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXCheckBox layoutX="167.0" layoutY="360.0" text="Brillo Adaptable" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="453.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #009688; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Guardar" />
+            <JFXButton buttonType="RAISED" layoutX="380.0" layoutY="453.0" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #999999; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Cancelar" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="-18.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Sort.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Menu2" layoutX="115.0" prefHeight="531.0" prefWidth="726.0" style="-fx-background-color: #05618A; -fx-background-radius: 5em; -fx-border-radius: 5em;" visible="false">
+         <children>
+            <ImageView layoutX="313.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/User.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="291.0" layoutY="171.0" text="Angel Mambel" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="224.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Email.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="255.0" layoutY="226.0" text="angel.mambel@hotmail.com" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="224.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Facebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="224.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Twitter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="224.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Youtube.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="32.0" layoutX="224.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Whatsapp.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="256.0" text="facebook.com/angelmambelgomez" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="289.0" text="twitter.com/Angeljm92" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="317.0" text="youtube.com/user/AngeljesusM" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="258.0" layoutY="347.0" text="+584145629165" textFill="#fffbfb">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="-16.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Sort.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
